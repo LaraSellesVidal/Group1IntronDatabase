@@ -8,7 +8,7 @@ The repository contains the following files and folders:
 - **subtype_CMs**: a folder containing the covariance model for each group 1 intron subtype. Covariance models were generated from the corresponding multiple alignments with [Infernal](http://eddylab.org/infernal/)
 - **GUI**: a folder containing distributions of the main group 1 intron database as a Flask application for all major platforms (Linux, macOS and Windows)
 
-Additionally, the database can be [accessed online](https://online-group-1-intron-database.onrender.com)
+The GUI provides access to the database through embedding it in a Flask application. Additionally, the database can be [accessed online](https://online-group-1-intron-database.onrender.com). The source code for the GUI implementation can be found in [this repository](https://github.com/LaraSellesVidal/OnlineGroup1IntronDatabase).
 
 It should be noted that Microsoft Excel can mishandle the database file when opening it due to not recognizing the file encoding as UTF-8. In order to ensure all fields are properly read in Microsoft Excel, the following steps should be followed:
 1.	Go to Data tab, Get Data submenu and select From Text, then choose the database file.
