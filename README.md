@@ -1,14 +1,14 @@
 This repository presents the comprehensive group 1 intron database and associated files. 
 
 The repository contains the following files and folders:
-- **intronDatabaseDF.tsv.xz**: a compressed TSV (tab-separated values) file containing the main group 1 intron database. The file can be opened with standard software such as Microsoft Excel or macOS Pages, or directly parsed with Python, R, awk, etc.
+- **intronDatabaseDF.tsv.xz**: a compressed TSV (tab-separated values) file containing the main group 1 intron database. The file can be opened with standard software such as Microsoft Excel or macOS Pages, or directly parsed with Python, R, AWK, etc.
 - **homingEndonucleasesDF.tsv**: a TSV file listing the potential homing endonucleases located in each group 1 intron
 - **full_workflow_clean.ipynb**: a Jupyter notebook providing the entire workflow used to generate this resource
 - **subtype_MSA**s: a folder containing the multiple alignment files used to generate the subtype covariance models. Multiple alignments are provided in [Stockholm format](https://sonnhammer.sbc.su.se/Stockholm.html)
 - **subtype_CMs**: a folder containing the covariance model for each group 1 intron subtype. Covariance models were generated from the corresponding multiple alignments with [Infernal](http://eddylab.org/infernal/)
 - **GUI**: a folder containing distributions of the main group 1 intron database as a Flask application for all major platforms (Linux, macOS and Windows)
 
-The recommended and simplest way to use the database is to decompress the main database file (**intronDatabaseDF.tsv.xz**) and work with it directly either by opening it with tools such as Microsoft Excel or macOS Pages, or parsing it with Python/R/awk.
+The recommended and simplest way to use the database is to decompress the main database file (**intronDatabaseDF.tsv.xz**) and work with it directly either by opening it with tools such as Microsoft Excel or macOS Pages, or parsing it with Python/R/AWK.
 
 The GUI provides access to the database through embedding it in a Flask application. Additionally, the database can be [accessed online](https://online-group-1-intron-database.onrender.com). The source code for the GUI implementation can be found in [this repository](https://github.com/LaraSellesVidal/OnlineGroup1IntronDatabase).
 
