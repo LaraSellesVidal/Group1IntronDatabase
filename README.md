@@ -17,3 +17,37 @@ It should be noted that Microsoft Excel can mishandle the database file when ope
 2.	In the next screen, options must be selected as Delimited file (since columns are not fixed width) and, importantly, Unicode (UTF-8) in the File origin menu.
 3.	Then, Tab should be selected as the delimiter.
 4.	In the final screen, the data type of specific columns can be chosen. We recommend choosing explicitly type Text for columns precedingExonSequence and consensusStruc-turalElements to avoid Excel interpreting them as some other data type.
+
+#Fields available in the main intron database
+
+The main group 1 intron database contains the following 29 fields for each intron:
+
+-	intronID: a unique identifier for each intron, containing the GenBankID of the sequence in which it was found.
+-	GenBankID: the GenBankID of the sequence in which the intron was found.
+-	startPosition: the first position of the intron sequence, includ-ing the terminal U of the 5’ flanking exon.
+-	endPosition: the last position of the terminal sequence (most frequently, the terminal G).
+-	intronSequence: sequence of the intron.
+-	intronLength: length of the intron sequence.
+-	intronSubtype: subtype of the intron.
+-	strand: strand in which the intron was found (either forward or reverse).
+-	organism: species in which the intron is located.
+-	organismType: broad category to which the organism of the corresponding intron belongs.
+-	subcellularLocation: subcellular compartment where the se-quence containing the intron is located.
+-	organismTaxID: unique NCBI taxonomy idenfier (taxid) of the organism of the corresponding intron.
+-	precedingExonSequence: sequence of the exon located be-fore the intron (5’ exon), up to 300 nucleotides.
+-	followingExonSequence: sequence of the exon located after the intron (3’ exon), up to 300 nucleotides.
+-	eternafoldSecondaryStructure: EternaFold secondary struc-ture prediction of the intron, in dot-bracket notation.
+-	viennaSecondaryStructure: ViennaRNA secondary structure prediction of the intron, in dot-bracket notation.
+-	contrafoldSecondaryStructure: CONTRAfold secondary structure prediction of the intron, in dot-bracket notation.
+-	rnastructureSecondaryStructure: RNAstructure secondary structure prediction of the intron, in dot-bracket notation.
+-	consensusSecondaryStructure: secondary structure predic-tion of the intron obtained by alignment to the group I intron covariance model with Infernal, in WUSS notation.
+-	consensusStructuralElements: group I intron structural ele-ment assignment based on alignment to the corresponding group I intron subtype covariance model with Infernal.
+-	infernalHitStartPosition: the first position of the region in the containing GenBank sequence against which a hit with the group I intron covariance model was found.
+-	infernalHitEndPosition: the last position of the region in the containing GenBank sequence against which a hit with the group I intron covariance model was found.
+-	infernalHitEValue: e-value of the hit with the group I intron covariance model.
+-	infernalHitBitScore: bit score of the hit with the group I in-tron covariance model.
+-	infernalHitU10Position: position in the containing GenBank sequence that was aligned with U10 of the group I intron covariance model (note that, in some cases, no position was aligned with U10).
+-	infernalSubtypeHitStartPosition: the first position of the re-gion in the containing GenBank sequence that aligned with the covariance model of the corresponding intron subtype.
+-	infernalSubtypeHitStartPosition: the last position of the re-gion in the containing GenBank sequence that aligned with the covariance model of the corresponding intron subtype.
+-	infernalSubtypeHitEValue: e-value of the hit with the corre-sponding intron subtype covariance model.
+-	infernalSubtypeHitBitScore: bit score of the hit with the cor-responding intron subtype covariance model.
