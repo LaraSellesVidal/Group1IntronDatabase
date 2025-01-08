@@ -1,3 +1,5 @@
+# Introduction
+
 This repository presents the comprehensive group 1 intron database and associated files. 
 
 The repository contains the following files and folders:
@@ -18,7 +20,7 @@ It should be noted that Microsoft Excel can mishandle the database file when ope
 3.	Then, Tab should be selected as the delimiter.
 4.	In the final screen, the data type of specific columns can be chosen. We recommend choosing explicitly type Text for columns precedingExonSequence and consensusStruc-turalElements to avoid Excel interpreting them as some other data type.
 
-#Fields available in the main intron database
+# Fields available in the main intron database
 
 The main group 1 intron database contains the following 29 fields for each intron:
 
