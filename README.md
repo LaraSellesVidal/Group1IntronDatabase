@@ -3,7 +3,7 @@
 This repository presents the comprehensive group 1 intron database and associated files. 
 
 The repository contains the following files and folders:
-- **intronDatabaseDF.tsv.xz**: a compressed TSV (tab-separated values) file containing the main group 1 intron database. The file can be opened with standard software such as Microsoft Excel or macOS Pages, or directly parsed with Python, R, AWK, etc.
+- **intronDatabaseDF.tsv.xz**: a compressed TSV (tab-separated values) file containing the main group 1 intron database. The file can be opened with standard software such as Microsoft Excel or macOS Numbers, or directly parsed with Python, R, AWK, etc.
 - **homingEndonucleasesDF.tsv**: a TSV file listing the potential homing endonucleases located in each group 1 intron
 - **full_workflow_clean.ipynb**: a Jupyter notebook providing the entire workflow used to generate this resource
 - **subtype_MSA**s: a folder containing the multiple alignment files used to generate the subtype covariance models. Multiple alignments are provided in [Stockholm format](https://sonnhammer.sbc.su.se/Stockholm.html)
